@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sara Valero Maza · Desarrolladora web fullstack</title>
+  <meta name="description" content="Portfolio de Sara Valero Maza, Técnica Superior en Desarrollo de Aplicaciones Web (DAW). Desarrolladora web fullstack en Almería, disponible para prácticas.">
+  <meta name="theme-color" content="#FAF9F7">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio-top">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Sara Valero Maza, ir al inicio">SV</a>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#formacion">Formación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <label class="icon-btn theme-switch" title="Cambiar entre modo claro y oscuro">
+        <input type="checkbox" id="theme-toggle" aria-label="Modo oscuro / claro">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- INICIO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="eyebrow">Almería · Disponible para prácticas</p>
+        <h1 id="hero-title">Hola, soy <span class="accent">Sara Valero Maza</span>.<br>Desarrolladora web fullstack.</h1>
+        <p class="hero-lead">Técnica Superior en Desarrollo de Aplicaciones Web (DAW). Creo aplicaciones y sitios web cuidando tanto el código como a las personas que los usan.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-outline" href="#email">Escríbeme</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 · Sobre mí</p>
+          <h2 id="sobre-title">Tecnología con enfoque humano</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Soy Técnica en Desarrollo de Aplicaciones Web (DAW) en formación, con un sólido bagaje previo en el sector social. Aporto una combinación única de habilidades técnicas en desarrollo web y competencias transversales como la empatía, la gestión de proyectos y la comunicación efectiva.</p>
+            <p>Estoy en búsqueda de una oportunidad para aportar valor en proyectos de desarrollo de software.</p>
+          </div>
+          <dl class="facts reveal">
+            <div><dt>Ubicación</dt><dd>Almería</dd></div>
+            <div><dt>Formación</dt><dd>Técnico Superior en DAW</dd></div>
+            <div><dt>Centro</dt><dd>Digitech FP</dd></div>
+            <div><dt>Disponibilidad</dt><dd>Prácticas</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 · Proyectos</p>
+          <h2 id="proyectos-title">Lo que he construido</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-visual" aria-hidden="true"><span>BJ</span></div>
+            <div class="card-body">
+              <h3>biblioteca-java</h3>
+              <p>Aplicación de consola en Java para agregar, mostrar y buscar libros en un inventario de biblioteca.</p>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>Java</li>
+              </ul>
+              <a class="card-link" href="https://github.com/saravaleromaza/biblioteca-java" target="_blank" rel="noopener noreferrer">Ver en GitHub<span class="visually-hidden"> (biblioteca-java, se abre en una pestaña nueva)</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-visual" aria-hidden="true"><span>SA</span></div>
+            <div class="card-body">
+              <h3>el-sabor-de-la-abuela</h3>
+              <p>Web sencilla de restaurante con carta y reservas hecha con HTML y CSS.</p>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a class="card-link" href="https://github.com/saravaleromaza/el-sabor-de-la-abuela" target="_blank" rel="noopener noreferrer">Ver en GitHub<span class="visually-hidden"> (el-sabor-de-la-abuela, se abre en una pestaña nueva)</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-visual" aria-hidden="true"><span>AP</span></div>
+            <div class="card-body">
+              <h3>Servidor web con Apache</h3>
+              <p>Instalación de Apache en Ubuntu Server dentro de una máquina virtual y publicación de una página web estática.</p>
+              <ul class="tags" aria-label="Tecnologías">
+                <li>Apache</li>
+                <li>Ubuntu Server</li>
+                <li>HTML</li>
+              </ul>
+              <!-- Cuando subas este proyecto a GitHub, añade aquí el enlace:
+              <a class="card-link" href="URL_DEL_REPOSITORIO" target="_blank" rel="noopener noreferrer">Ver en GitHub →</a> -->
+            </div>
+          </article>
+        </div>
+
+        <p class="more reveal">
+          <a class="card-link" href="https://github.com/saravaleromaza" target="_blank" rel="noopener noreferrer">Ver más en mi GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span> <span aria-hidden="true">→</span></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section" id="habilidades" aria-labelledby="hab-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 · Habilidades</p>
+          <h2 id="hab-title">Mi stack</h2>
+        </div>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Lenguajes</h3>
+            <ul class="tags"><li>Java</li><li>PHP</li><li>JavaScript</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Web</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>Apache</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Bases de datos</h3>
+            <ul class="tags"><li>PostgreSQL</li><li>MongoDB</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Herramientas</h3>
+            <ul class="tags"><li>Git</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="section" id="experiencia" aria-labelledby="exp-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 · Experiencia</p>
+          <h2 id="exp-title">Trayectoria profesional</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">4 años</div>
+            <div class="timeline-content">
+              <h3>Trabajadora social</h3>
+              <p class="timeline-sub">Sector sociosanitario</p>
+              <p>Desarrollé habilidades sólidas en la evaluación de necesidades, la planificación de intervenciones personalizadas y la coordinación de servicios.</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-meta">9 meses</div>
+            <div class="timeline-content">
+              <h3>Dependienta</h3>
+              <p class="timeline-sub">Óptica</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FORMACIÓN -->
+    <section class="section" id="formacion" aria-labelledby="form-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">05 · Formación</p>
+          <h2 id="form-title">Estudios</h2>
+        </div>
+        <article class="edu reveal">
+          <h3>Técnico Superior en Desarrollo de Aplicaciones Web (DAW)</h3>
+          <p class="timeline-sub">Digitech FP · 2 años</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="container">
+        <div class="contact-box reveal">
+          <p class="eyebrow">06 · Contacto</p>
+          <h2 id="contacto-title">¿Hablamos?</h2>
+          <p>Estoy buscando prácticas en desarrollo web. Si mi perfil te encaja, me encantará conocerte.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#email">Escríbeme</a>
+            <a class="btn btn-outline" href="https://github.com/saravaleromaza" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/saravaleromaza" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Sara Valero Maza</p>
+      <a href="#inicio-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <!-- TARJETA DE CONTACTO (se abre con :target, sin JavaScript) -->
+  <div class="modal" id="email" role="dialog" aria-modal="true" aria-labelledby="email-title">
+    <a class="modal-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <div class="modal-card">
+      <a class="modal-close" href="#!" aria-label="Cerrar tarjeta de contacto">×</a>
+      <p class="eyebrow">Contacto</p>
+      <h2 id="email-title">Mi correo</h2>
+      <p class="email-address">svaleromaza@gmail.com</p>
+      <p class="modal-hint">Selecciona la dirección para copiarla o abre tu programa de correo.</p>
+      <a class="btn btn-primary" href="mailto:svaleromaza@gmail.com">Abrir mi correo</a>
+    </div>
+  </div>
+</body>
+</html>
