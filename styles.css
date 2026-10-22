@@ -1,8 +1,3 @@
-/* ==========================================================================
-   Portfolio · Sara Valero Maza
-   1. Variables  2. Base  3. Layout  4. Componentes  5. Secciones  6. Movimiento
-   ========================================================================== */
-
 /* 1. Variables ----------------------------------------------------------- */
 :root {
   --bg: #faf9f7;
@@ -33,7 +28,7 @@
   }
 }
 
-/* El interruptor (casilla) invierte el tema actual, sin JavaScript */
+/* El interruptor (casilla) invierte el tema actual */
 :root:has(#theme-toggle:checked) {
   --bg: #121212;
   --surface: #1b1b1b;
