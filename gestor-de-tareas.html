@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestor de tareas · Sara Valero Maza</title>
+  <meta name="description" content="Aplicación de consola en Java para gestionar tareas, diseñada con Programación Orientada a Objetos.">
+  <meta name="theme-color" content="#FAF9F7">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio-top">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Sara Valero Maza, ir al inicio">SV</a>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#proyectos">Proyectos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <label class="icon-btn theme-switch" title="Cambiar entre modo claro y oscuro">
+        <input type="checkbox" id="theme-toggle" aria-label="Modo oscuro / claro">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- CABECERA DEL PROYECTO -->
+    <section class="project-hero" aria-labelledby="proyecto-title">
+      <div class="container">
+        <a class="back-link" href="index.html#proyectos">← Volver a proyectos</a>
+        <p class="eyebrow">Proyecto · Aplicación de consola · Java</p>
+        <h1 id="proyecto-title">Gestor de tareas</h1>
+        <p class="hero-lead">Aplicación de consola en Java para gestionar tareas, diseñada con Programación Orientada a Objetos.</p>
+        <ul class="tags" aria-label="Tecnologías"><li>Java</li></ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/saravaleromaza/to-do-CLI" target="_blank" rel="noopener noreferrer">Ver en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+          <a class="btn btn-outline" href="index.html#proyectos">Ver más proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <section class="section" aria-label="Detalles del proyecto">
+      <div class="container project-layout">
+        <div class="project-body">
+          <h2>Qué hace</h2>
+          <p>Aplicación de consola en Java para gestionar tareas. Está diseñada con Programación Orientada a Objetos.</p>
+          <p class="todo">Permite crear y consultar el listado de tareas desde la terminal</p>
+
+          <h2>Qué aprendí</h2>
+          <ul>
+            <li class="todo">Aprendí a aplicar los principios básicos de la Programación Orientada a Objetos en Java, trabajando con clases, objetos, atributos y constructores para organizar el código</li>
+            <li class="todo">[Escribe aquí un reto que tuviste y cómo lo resolviste]</li>
+          </ul>
+
+          <h2>Cómo ejecutarlo</h2>
+          <p>Necesitas tener instalado el JDK de Java. Descarga el proyecto:</p>
+          <pre><code>git clone https://github.com/saravaleromaza/to-do-CLI.git
+          cd to-do-CLI</code></pre>
+          <p class="todo">[Completa: comandos exactos para compilar y ejecutar tu proyecto]</p>
+        </div>
+
+        <aside class="project-aside" aria-label="Ficha del proyecto">
+          <dl class="facts"><div><dt>Tipo</dt><dd>Aplicación de consola</dd></div><div><dt>Lenguaje</dt><dd>Java</dd></div><div><dt>Enfoque</dt><dd>Programación Orientada a Objetos</dd></div><div><dt>Repositorio</dt><dd><a class="card-link" href="https://github.com/saravaleromaza/to-do-CLI" target="_blank" rel="noopener noreferrer">github.com/saravaleromaza/to-do-CLI<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></dd></div></dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Galería</p>
+          <h2 id="galeria-title">Capturas</h2>
+        </div>
+        <div class="gallery">
+          <a class="shot" href="#foto-1" style="--shot: url('img-proyectos/gestor-añadir.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 1</span>
+            <span class="visually-hidden">Ampliar captura 1 de Gestor de tareas</span>
+          </a>
+          <a class="shot" href="#foto-2" style="--shot: url('img-proyectos/gestor-listar.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 2</span>
+            <span class="visually-hidden">Ampliar captura 2 de Gestor de tareas</span>
+          </a>
+          <a class="shot" href="#foto-3" style="--shot: url('img-proyectos/gestor-salir.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 3</span>
+            <span class="visually-hidden">Ampliar captura 3 de Gestor de tareas</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS PROYECTOS -->
+    <section class="section" aria-labelledby="otros-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Sigue explorando</p>
+          <h2 id="otros-title">Otros proyectos</h2>
+        </div>
+        <ul class="more-projects"><li><a class="card-link" href="biblioteca-java.html">biblioteca-java</a></li><li><a class="card-link" href="formulario-php.html">formulario-php</a></li><li><a class="card-link" href="el-sabor-de-la-abuela.html">el-sabor-de-la-abuela</a></li><li><a class="card-link" href="servidor-apache.html">Servidor web con Apache</a></li></ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html#email">Escríbeme</a>
+          <a class="btn btn-outline" href="index.html#proyectos">Volver al portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Sara Valero Maza</p>
+      <a href="#inicio-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="foto-1" role="dialog" aria-modal="true" aria-label="Captura 1 de Gestor de tareas">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/gestor-añadir.png" alt="Captura de como se añaden tareas desde la terminal">
+    </figure>
+  </div>
+  <div class="lightbox" id="foto-2" role="dialog" aria-modal="true" aria-label="Captura 2 de Gestor de tareas">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/gestor-listar.png" alt="Captura del listado de tareas por terminal">
+    </figure>
+  </div>
+  <div class="lightbox" id="foto-3" role="dialog" aria-modal="true" aria-label="Captura 3 de Gestor de tareas">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/gestor-salir.png" alt="Programa gestor de tareas finalizado">
+    </figure>
+  </div>
+</body>
+</html>
