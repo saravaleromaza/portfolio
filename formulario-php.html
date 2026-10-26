@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>formulario-php · Sara Valero Maza</title>
+  <meta name="description" content="Formulario de registro en PHP con validación del lado del servidor y protección contra XSS.">
+  <meta name="theme-color" content="#FAF9F7">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio-top">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Sara Valero Maza, ir al inicio">SV</a>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#proyectos">Proyectos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <label class="icon-btn theme-switch" title="Cambiar entre modo claro y oscuro">
+        <input type="checkbox" id="theme-toggle" aria-label="Modo oscuro / claro">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- CABECERA DEL PROYECTO -->
+    <section class="project-hero" aria-labelledby="proyecto-title">
+      <div class="container">
+        <a class="back-link" href="index.html#proyectos">← Volver a proyectos</a>
+        <p class="eyebrow">Proyecto · Formulario web · PHP</p>
+        <h1 id="proyecto-title">formulario-php</h1>
+        <p class="hero-lead">Formulario de registro en PHP con validación del lado del servidor y protección contra XSS.</p>
+        <ul class="tags" aria-label="Tecnologías"><li>PHP</li><li>HTML</li><li>CSS</li></ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/saravaleromaza/formulario-php" target="_blank" rel="noopener noreferrer">Ver en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+          <a class="btn btn-outline" href="index.html#proyectos">Ver más proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <section class="section" aria-label="Detalles del proyecto">
+      <div class="container project-layout">
+        <div class="project-body">
+          <h2>Qué hace</h2>
+          <p>Formulario de registro desarrollado con PHP, HTML5 y CSS3. Lo más importante del proyecto está en cómo trata los datos:</p>
+          <ul><li>Validación robusta del lado del servidor.</li><li>Filtrado de los datos recibidos.</li><li>Protección contra XSS.</li><li>Interfaz limpia con HTML5 y CSS3.</li></ul>
+
+          <h2>Qué aprendí</h2>
+          <ul>
+            <li class="todo">Aprendí a desarrollar formularios con HTML5 y CSS3 y a procesar y validar los datos recibidos mediante PHP</li>
+            <li class="todo">Abordar mediante la validación y el filtrado de los datos en el servidor, así como medidas de protección frente a ataques XSS</li>
+          </ul>
+
+          <h2>Cómo ejecutarlo</h2>
+          <p>Necesitas tener PHP instalado. Descarga el proyecto y arranca el servidor local de PHP desde su carpeta:</p>
+          <pre><code>git clone https://github.com/saravaleromaza/formulario-php.git
+cd formulario-php
+php -S localhost:8000</code></pre>
+          <p>Después abre <code>http://localhost:8000</code> en el navegador.</p>
+        </div>
+
+        <aside class="project-aside" aria-label="Ficha del proyecto">
+          <dl class="facts"><div><dt>Tipo</dt><dd>Formulario web</dd></div><div><dt>Lenguajes</dt><dd>PHP, HTML y CSS</dd></div><div><dt>Repositorio</dt><dd><a class="card-link" href="https://github.com/saravaleromaza/formulario-php" target="_blank" rel="noopener noreferrer">github.com/saravaleromaza/formulario-php<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></dd></div></dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Galería</p>
+          <h2 id="galeria-title">Capturas</h2>
+        </div>
+        <div class="gallery">
+          <a class="shot" href="#foto-1" style="--shot: url('img-protectos/formulario-php.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 1</span>
+            <span class="visually-hidden">Ampliar captura 1 de formulario-php</span>
+          </a>
+          <a class="shot" href="#foto-2" style="--shot: url('img-protectos/formulario-error.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 2</span>
+            <span class="visually-hidden">Ampliar captura 2 de formulario-php</span>
+          </a>
+          <a class="shot" href="#foto-3" style="--shot: url('img-protectos/formulario-ok.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 3</span>
+            <span class="visually-hidden">Ampliar captura 3 de formulario-php</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS PROYECTOS -->
+    <section class="section" aria-labelledby="otros-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Sigue explorando</p>
+          <h2 id="otros-title">Otros proyectos</h2>
+        </div>
+        <ul class="more-projects"><li><a class="card-link" href="biblioteca-java.html">biblioteca-java</a></li><li><a class="card-link" href="el-sabor-de-la-abuela.html">el-sabor-de-la-abuela</a></li><li><a class="card-link" href="servidor-apache.html">Servidor web con Apache</a></li></ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html#email">Escríbeme</a>
+          <a class="btn btn-outline" href="index.html#proyectos">Volver al portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Sara Valero Maza</p>
+      <a href="#inicio-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="foto-1" role="dialog" aria-modal="true" aria-label="Captura 1 de formulario-php">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/formulario-php.png" alt="Formulario realizado con php">
+    </figure>
+  </div>
+  <div class="lightbox" id="foto-2" role="dialog" aria-modal="true" aria-label="Captura 2 de formulario-php">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/formulario-error.png" alt="Formulario validando datos erroneos">
+    </figure>
+  </div>
+  <div class="lightbox" id="foto-3" role="dialog" aria-modal="true" aria-label="Captura 3 de formulario-php">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/formulario-ok.png" alt="Registro realizado correctamente">
+    </figure>
+  </div>
+</body>
+</html>
