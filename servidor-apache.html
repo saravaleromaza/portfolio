@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servidor web con Apache · Sara Valero Maza</title>
+  <meta name="description" content="Instalación de Apache en Ubuntu Server dentro de una máquina virtual y publicación de una página web estática.">
+  <meta name="theme-color" content="#FAF9F7">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio-top">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Sara Valero Maza, ir al inicio">SV</a>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#proyectos">Proyectos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <label class="icon-btn theme-switch" title="Cambiar entre modo claro y oscuro">
+        <input type="checkbox" id="theme-toggle" aria-label="Modo oscuro / claro">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- CABECERA DEL PROYECTO -->
+    <section class="project-hero" aria-labelledby="proyecto-title">
+      <div class="container">
+        <a class="back-link" href="index.html#proyectos">← Volver a proyectos</a>
+        <p class="eyebrow">Proyecto · Administración de servidores · Apache</p>
+        <h1 id="proyecto-title">Servidor web con Apache</h1>
+        <p class="hero-lead">Instalación de Apache en Ubuntu Server dentro de una máquina virtual y publicación de una página web estática.</p>
+        <ul class="tags" aria-label="Tecnologías"><li>Apache</li><li>Ubuntu Server</li><li>HTML</li></ul>
+        <div class="hero-actions">
+          <a class="btn btn-outline" href="index.html#proyectos">Ver más proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <section class="section" aria-label="Detalles del proyecto">
+      <div class="container project-layout">
+        <div class="project-body">
+          <h2>Qué hace</h2>
+          <p>Instalación del servidor web Apache sobre Ubuntu Server, dentro de una máquina virtual, y publicación de una página web estática.</p>
+
+          <h2>Qué aprendí</h2>
+          <ul>
+            <li class="todo">Aprendí a instalar y configurar Apache en Ubuntu Server dentro de una máquina virtual, y a publicar una página web estática para que pudiera servirse desde el servidor</li>
+            <li class="todo">Uno de los retos fue configurar correctamente el servidor y comprobar que la página web se mostraba desde el navegador. Lo resolví siguiendo los pasos de configuración y verificando el acceso a la web</li>
+          </ul>
+
+          <h2>Cómo ejecutarlo</h2>
+          <p>Pasos generales para reproducirlo en un Ubuntu Server:</p>
+          <pre><code>sudo apt update
+                  sudo apt install apache2
+                  sudo systemctl status apache2
+                  sudo cp miweb.html /var/www/html/</code></pre>
+          <p>Después abre <code>http://IP-DE-LA-MAQUINA/miweb.html</code> desde el navegador.</p>
+          <p class="todo">[Revisa estos pasos y ajústalos a lo que hiciste tú]</p>
+        </div>
+
+        <aside class="project-aside" aria-label="Ficha del proyecto">
+          <dl class="facts"><div><dt>Tipo</dt><dd>Servidor web</dd></div><div><dt>Sistema</dt><dd>Ubuntu Server en máquina virtual</dd></div></dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Galería</p>
+          <h2 id="galeria-title">Capturas</h2>
+        </div>
+        <div class="gallery">
+          <a class="shot" href="#foto-1" style="--shot: url('img-proyectos/apache-server.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 1</span>
+            <span class="visually-hidden">Ampliar captura 1 de Servidor web con Apache</span>
+          </a>
+          <a class="shot" href="#foto-2" style="--shot: url('img-proyectos/apache-web.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 2</span>
+            <span class="visually-hidden">Ampliar captura 2 de Servidor web con Apache</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS PROYECTOS -->
+    <section class="section" aria-labelledby="otros-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Sigue explorando</p>
+          <h2 id="otros-title">Otros proyectos</h2>
+        </div>
+        <ul class="more-projects"><li><a class="card-link" href="biblioteca-java.html">biblioteca-java</a></li><li><a class="card-link" href="formulario-php.html">formulario-php</a></li><li><a class="card-link" href="el-sabor-de-la-abuela.html">el-sabor-de-la-abuela</a></li></ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html#email">Escríbeme</a>
+          <a class="btn btn-outline" href="index.html#proyectos">Volver al portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Sara Valero Maza</p>
+      <a href="#inicio-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="foto-1" role="dialog" aria-modal="true" aria-label="Captura 1 de Servidor web con Apache">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/apache-server.png" alt="Servidor Apache corriendo">
+    </figure>
+  </div>
+  <div class="lightbox" id="foto-2" role="dialog" aria-modal="true" aria-label="Captura 2 de Servidor web con Apache">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/apache-web.png" alt="Web estatica corriendo en Apache">
+    </figure>
+  </div>
+</body>
+</html>
