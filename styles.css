@@ -690,10 +690,11 @@ a { color: inherit; }
 
 .project-layout {
   display: grid;
-  grid-template-columns: 1.7fr 1fr;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
   gap: 56px;
   align-items: start;
 }
+.project-body, .project-aside { min-width: 0; }
 .project-body h2 { font-size: 1.6rem; margin: 40px 0 14px; }
 .project-body h2:first-child { margin-top: 0; }
 .project-body ul { list-style: disc; padding-left: 1.3em; margin: 0 0 1em; }
@@ -702,6 +703,7 @@ a { color: inherit; }
   margin: 0 0 1em;
   padding: 16px;
   overflow-x: auto;
+  max-width: 100%;
   font-size: 0.9rem;
   line-height: 1.6;
   background: var(--surface);
@@ -773,7 +775,7 @@ a { color: inherit; }
 .more-projects { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-bottom: 32px; }
 
 @media (max-width: 860px) {
-  .project-layout { grid-template-columns: 1fr; gap: 32px; }
+  .project-layout { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .project-hero { padding: 40px 0 36px; }
 }
 @media (prefers-reduced-motion: reduce) {
