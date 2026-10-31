@@ -403,69 +403,6 @@ a { color: inherit; }
   color: var(--muted);
 }
 
-/* Experiencia */
-.timeline { position: relative; max-width: 760px; }
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 7px;
-  top: 8px;
-  bottom: 8px;
-  width: 2px;
-  background: var(--border);
-}
-.timeline-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 24px;
-  padding: 0 0 40px 40px;
-}
-.timeline-item:last-child { padding-bottom: 0; }
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 16px;
-  height: 16px;
-  background: var(--bg);
-  border: 3px solid var(--accent);
-  border-radius: 50%;
-}
-.timeline-meta { padding-top: 2px; font-weight: 600; color: var(--accent); }
-.timeline-content h3 { font-size: 1.35rem; }
-.timeline-sub { margin: 4px 0 12px; color: var(--muted); font-weight: 500; }
-.timeline-content p:last-child { margin-bottom: 0; }
-
-/* Formación */
-.edu {
-  max-width: 760px;
-  padding: 28px;
-  margin-bottom: 12px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
-  border-radius: var(--radius);
-}
-.edu h3 { font-size: 1.35rem; }
-.edu .timeline-sub { margin-bottom: 0; }
-
-/* Contacto */
-.contact-box {
-  max-width: 760px;
-  padding: 56px 40px;
-  text-align: center;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  margin: 0 auto;
-}
-.contact-box h2 { margin-bottom: 16px; font-size: clamp(2rem, 4.5vw, 2.8rem); }
-.contact-box p { color: var(--muted); max-width: 52ch; margin-left: auto; margin-right: auto; }
-.contact-box .eyebrow { color: var(--accent); }
-.contact-box .hero-actions { justify-content: center; margin-top: 28px; }
-
 /* Pie */
 .site-footer { padding: 32px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.95rem; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
