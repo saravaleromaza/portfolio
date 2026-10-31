@@ -6,7 +6,7 @@ Portfolio personal de **Sara Valero Maza**, Técnica Superior en Desarrollo de A
 
 ## ✨ Características
 
-- Secciones: Sobre mí, Proyectos, Habilidades, Experiencia, Formación y Contacto
+- Secciones: Sobre mí, Proyectos, Habilidades y Contacto
 - Modo claro / oscuro
 - Diseño responsive
 - Enlace enlace "Saltar al contenido" y metadatos pensados para accesibilidad
