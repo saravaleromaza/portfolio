@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juego de preguntas · Sara Valero Maza</title>
+  <meta name="description" content="Mini juego de preguntas en JavaScript con cuenta atrás de 30 segundos, pantalla de Game Over con sonido y opción de volver a intentarlo.">
+  <meta name="theme-color" content="#FAF9F7">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="icon" href="favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/favicon-192.png">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio-top">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Sara Valero Maza, ir al inicio">SV</a>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#proyectos">Proyectos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <label class="icon-btn theme-switch" title="Cambiar entre modo claro y oscuro">
+        <input type="checkbox" id="theme-toggle" aria-label="Modo oscuro / claro">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+      </label>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- CABECERA DEL PROYECTO -->
+    <section class="project-hero" aria-labelledby="proyecto-title">
+      <div class="container">
+        <a class="back-link" href="index.html#proyectos">← Volver a proyectos</a>
+        <p class="eyebrow">Proyecto · Juego web · JavaScript</p>
+        <h1 id="proyecto-title">Juego de preguntas</h1>
+        <p class="hero-lead">Mini juego de preguntas en JavaScript con cuenta atrás de 30 segundos, pantalla de Game Over con sonido y opción de volver a intentarlo.</p>
+        <ul class="tags" aria-label="Tecnologías"><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://github.com/saravaleromaza/juego-preguntas-js" target="_blank" rel="noopener noreferrer">Ver en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+          <a class="btn btn-outline" href="index.html#proyectos">Ver más proyectos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <section class="section" aria-label="Detalles del proyecto">
+      <div class="container project-layout">
+        <div class="project-body">
+          <h2>Qué hace</h2>
+          <p>Un juego de preguntas que se juega en el navegador. Hay 5 preguntas y una cuenta atrás de 30 segundos: si se acaba el tiempo, aparece la pantalla de <em>Game Over</em> con un sonido. También se puede terminar antes con el botón <strong>Finalizar</strong> y empezar de nuevo con <strong>Volver a intentar</strong>.</p>
+
+          <h2>Qué aprendí</h2>
+          <ul>
+            <li>A manipular el DOM con JavaScript: mostrar las preguntas, leer las respuestas y cambiar la pantalla según el estado del juego.</li>
+            <li>A controlar el tiempo con temporizadores y a detenerlos y reiniciarlos correctamente.</li>
+            <li>A reproducir audio desde JavaScript y a reiniciar el estado del juego sin recargar la página.</li>
+          </ul>
+
+          <h2>Cómo ejecutarlo</h2>
+          <p>No necesita instalar nada. Descarga el proyecto:</p>
+          <pre><code>git clone https://github.com/saravaleromaza/juego-preguntas-js.git
+cd juego-preguntas-js</code></pre>
+          <p>Abre <code>index.html</code> en el navegador, o sírvelo con la extensión Live Server de VS Code.</p>
+          <p>Aquí se puede ver la <a href="https://saravaleromaza.github.io/juego-preguntas-js/" target="_blank">demo en directo</a></p>
+        </div>        
+
+        <aside class="project-aside" aria-label="Ficha del proyecto">
+          <dl class="facts"><div><dt>Tipo</dt><dd>Juego web</dd></div><div><dt>Lenguajes</dt><dd>JavaScript, HTML, CSS</dd></div><div><dt>Incluye</dt><dd>Cuenta atrás y audio</dd></div><div><dt>Repositorio</dt><dd><a class="card-link" href="https://github.com/saravaleromaza/juego-preguntas-js" target="_blank" rel="noopener noreferrer">github.com/saravaleromaza/juego-preguntas-js<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a></dd></div></dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section" aria-labelledby="galeria-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Galería</p>
+          <h2 id="galeria-title">Capturas</h2>
+        </div>
+        <div class="gallery">
+          <a class="shot" href="#foto-1" style="--shot: url('img-proyectos/juego-preguntas-js-1.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 1</span>
+            <span class="visually-hidden">Ampliar captura 1 de Juego de preguntas</span>
+          </a>
+          <a class="shot" href="#foto-2" style="--shot: url('img-proyectos/juego-preguntas-js-2.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 2</span>
+            <span class="visually-hidden">Ampliar captura 2 de Juego de preguntas</span>
+          </a>
+          <a class="shot" href="#foto-3" style="--shot: url('img-proyectos/juego-preguntas-js-3.png')">
+            <span class="shot-empty" aria-hidden="true">Captura 3</span>
+            <span class="visually-hidden">Ampliar captura 3 de Juego de preguntas</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTROS PROYECTOS -->
+    <section class="section" aria-labelledby="otros-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Sigue explorando</p>
+          <h2 id="otros-title">Otros proyectos</h2>
+        </div>
+        <ul class="more-projects"><li><a class="card-link" href="biblioteca-java.html">biblioteca-java</a></li><li><a class="card-link" href="formulario-php.html">formulario-php</a></li><li><a class="card-link" href="el-sabor-de-la-abuela.html">el-sabor-de-la-abuela</a></li><li><a class="card-link" href="gestor-de-tareas.html">Gestor de tareas</a></li><li><a class="card-link" href="servidor-apache.html">Servidor web con Apache</a></li></ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="index.html#email">Escríbeme</a>
+          <a class="btn btn-outline" href="index.html#proyectos">Volver al portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Sara Valero Maza</p>
+      <a href="#inicio-top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="foto-1" role="dialog" aria-modal="true" aria-label="Captura 1 de Juego de preguntas">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/juego-preguntas-js-1.png" alt="Captura 1 de Juego de preguntas">
+      <!-- Cambia el texto de alt por una descripción de lo que se ve en la captura -->
+    </figure>
+  </div>
+  <div class="lightbox" id="foto-2" role="dialog" aria-modal="true" aria-label="Captura 2 de Juego de preguntas">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/juego-preguntas-js-2.png" alt="Captura 2 de Juego de preguntas">
+      <!-- Cambia el texto de alt por una descripción de lo que se ve en la captura -->
+    </figure>
+  </div>
+  <div class="lightbox" id="foto-3" role="dialog" aria-modal="true" aria-label="Captura 3 de Juego de preguntas">
+    <a class="lightbox-backdrop" href="#!" tabindex="-1" aria-label="Cerrar"></a>
+    <figure>
+      <a class="lightbox-close" href="#!" aria-label="Cerrar captura">×</a>
+      <img src="img-proyectos/juego-preguntas-js-3.png" alt="Captura 3 de Juego de preguntas">
+      <!-- Cambia el texto de alt por una descripción de lo que se ve en la captura -->
+    </figure>
+  </div>
+</body>
+</html>
