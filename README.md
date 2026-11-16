@@ -45,6 +45,7 @@ portfolio/
 ├── formulario-php.html
 ├── el-sabor-de-la-abuela.html
 ├── gestor-de-tareas.html
+├── juego-preguntas-js.html
 ├── servidor-apache.html
 ├── img-proyectos/              # Capturas de los proyectos
 ├── favicon/                    # Iconos del sitio
@@ -81,7 +82,8 @@ git push
 | [biblioteca-java](https://github.com/saravaleromaza/biblioteca-java) | Java |
 | [formulario-php](https://github.com/saravaleromaza/formulario-php) | PHP, HTML |
 | [el-sabor-de-la-abuela](https://github.com/saravaleromaza/el-sabor-de-la-abuela) | HTML, CSS |
-| [gestor-de-tareas](https://github.com/saravaleromaza/to-do-CLI) | JavaScript |
+| [gestor-de-tareas](https://github.com/saravaleromaza/to-do-CLI) | Java |
+| [juego-preguntas-js](https://github.com/saravaleromaza/juego-preguntas-js) | JavaScript, HTML, CSS |
 | Servidor web con Apache | Apache, Ubuntu Server, HTML |
 
 ## 📬 Contacto
